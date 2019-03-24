@@ -401,6 +401,7 @@ DEPENDENCIES
   omniauth-twitter (~> 1.4)
   pg (>= 0.18, < 2.0)
   pry-rails
+  public_suffix
   puma (~> 3.11)
   rails (~> 5.2.2, >= 5.2.2.1)
   rubocop (~> 0.60)
