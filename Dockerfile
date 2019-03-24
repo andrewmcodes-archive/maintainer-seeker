@@ -10,6 +10,7 @@ RUN mkdir /maintainer-seeker
 WORKDIR /maintainer-seeker
 COPY Gemfile /maintainer-seeker/Gemfile
 COPY Gemfile.lock /maintainer-seeker/Gemfile.lock
+RUN gem update --system
 RUN bundle install
 COPY . /maintainer-seeker
 
