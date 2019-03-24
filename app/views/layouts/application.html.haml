@@ -1,11 +1,11 @@
 !!!
 %html
   %head
-    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    = render 'shared/head'
+    %meta{ content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type" }/
+    = render "shared/head"
   %body
-    = render 'shared/navbar'
-    = render 'shared/notices'
+    = render "shared/navbar"
+    = render "shared/notices"
     .container
       = yield
-    = render 'shared/footer'
+    = render "shared/footer"
