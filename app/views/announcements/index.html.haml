@@ -1,0 +1,20 @@
+%h1 What's New
+.card
+  .card-body
+    - @announcements.each_with_index do |announcement, index|
+      - if index != 0
+        .row
+          .col
+            %hr/
+      .row.announcement{id: "#{dom_id(announcement)}"}
+        .col-sm-1.text-center
+          = link_to announcements_path(anchor: dom_id(announcement)) do
+            %strong= announcement.published_at.strftime("%b %d")
+        .col
+          %strong{class: "#{announcement_class(announcement.announcement_type)}"}
+            = announcement.announcement_type.titleize
+            \:
+          %strong= announcement.name
+          = simple_format announcement.description
+    - if @announcements.empty?
+      %div Exciting stuff coming very soon!

@@ -1,0 +1,34 @@
+= form_with(model: "#{model_resource_name}", local: true) do |form|
+  - if "#{singular_table_name.errors.any?}"
+    #error_explanation
+      %h2
+        = pluralize("#{singular_table_name.errors.count} error prohibited this #{singular_table_name} from being saved:")
+
+      %ul
+        - singular_table_name.errors.full_messages.each do |message|
+          %li
+            = message
+
+- attributes.each do |attribute|
+  .form-group
+  - if attribute.password_digest?
+    = form.label :password
+    = form.password_field :password, class: 'form-control'
+
+    .form-group
+      = form.label :password_confirmation
+      = form.password_field :password_confirmation, class: 'form-control'
+  - else
+    = form.label :attribute.column_name
+    = form.attribute, field_type: attribute.column_name, class: 'form-control'
+
+  .form-group
+    -if model_resource_name.persisted?
+      .float-right
+        =link_to 'Destroy', model_resource_name, method: :delete, class: "text-danger", data: { confirm: 'Are you sure?' }
+      = form.submit class: 'btn btn-primary'
+
+    - if model_resource_name.persisted?
+      = link_to "Cancel", model_resource_name, class: "btn btn-link"
+    - else
+      = link_to "Cancel", "#{index_helper}_path", class: "btn btn-link"
