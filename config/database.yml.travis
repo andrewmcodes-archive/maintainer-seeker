@@ -5,12 +5,12 @@ default: &default
 
 development:
   <<: *default
-  database: maintainer-seeker_development
+  database: maintainer_seeker_development
 
 test:
   <<: *default
-  database: maintainer-seeker_test
+  database: maintainer_seeker_test
 
 production:
   <<: *default
-  database: maintainer-seeker_production
+  database: maintainer_seeker_production
