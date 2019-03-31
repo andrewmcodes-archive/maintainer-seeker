@@ -1,0 +1,16 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: maintainer-seeker_development
+
+test:
+  <<: *default
+  database: maintainer-seeker_test
+
+production:
+  <<: *default
+  database: maintainer-seeker_production

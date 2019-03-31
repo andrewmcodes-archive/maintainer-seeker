@@ -1,0 +1,14 @@
+language: ruby
+rvm:
+  - 2.6.2
+env:
+  - DB=pgsql
+services:
+  - postgresql
+script:
+  - RAILS_ENV=test bin/rails db:migrate --trace
+  - bin/rails db:test:prepare
+  - bin/rails test
+before_script:
+  - cp config/database.yml.travis config/database.yml
+  - psql -c 'create database maintainer-seeker_test;' -U postgres
