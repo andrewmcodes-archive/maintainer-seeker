@@ -1,5 +1,6 @@
 # Maintainer Seeker
 
+[![Build Status](https://travis-ci.org/andrewmcodes/maintainer-seeker.svg?branch=master)](https://travis-ci.org/andrewmcodes/maintainer-seeker)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fandrewmcodes%2Fmaintainer-seeker.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fandrewmcodes%2Fmaintainer-seeker?ref=badge_shield)
 
 ## Development

@@ -26,6 +26,7 @@ gem "rails", "~> 5.2.2", ">= 5.2.2.1"
 gem "sentry-raven"
 gem "sidekiq", "~> 5.2", ">= 5.2.5"
 gem "sitemap_generator", "~> 6.0", ">= 6.0.1"
+gem "travis"
 gem "turbolinks", "~> 5"
 gem "tzinfo-data", platforms: %i(mingw mswin x64_mingw jruby)
 gem "webpacker", "~> 4.0.2"
