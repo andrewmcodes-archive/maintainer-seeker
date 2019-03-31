@@ -25,3 +25,8 @@ module MaintainerSeeker
     # the framework and any gems in your application.
   end
 end
+
+# Sentry
+Raven.configure do |config|
+  config.dsn = 'https://6af7790407fe4b309b70a03ee893fe8f:259bd1c227504db9a3b8ff60a25a1d8f@sentry.io/1427643'
+end
