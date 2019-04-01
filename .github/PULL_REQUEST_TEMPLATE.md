@@ -1,18 +1,13 @@
-[code_of_conduct]: CODE_OF_CONDUCT.md
-[contributing_guidelines]: CONTRIBUTING.md
+# Type of PR (feature, enhancement, bug fix, etc.)
 
-**Thanks for contributing to XXXXX! Please take a look at the [contribution guidelines][contributing_guidelines] and [code of conduct][code_of_conduct] first and remove this line.**
+## Description
 
----
+Please include a summary of the change and which issue is fixed.
 
-## Project
+Fixes # (issue)
 
-Title and urls (GitHub, project page, blog posts, ...).
+## Checklist
 
-## What is this
-
-Describe features.
-
-## Why should this be added
-
-Explain value.
+- [ ] My code follows the style guidelines of this project
+- [ ] I have added tests that prove my fix is effective or that my feature works
+- [ ] The build is passing
