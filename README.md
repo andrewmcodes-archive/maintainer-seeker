@@ -12,6 +12,14 @@ bundle install && yarn
 foreman start
 ```
 
+## Bots
+
+We use several bots in order to automate some tasks. Here is a list of what we are currently running:
+
+- [ci-reporter](https://github.com/jasonetco/ci-reporter)
+- [delete merged branch](https://github.com/SvanBoxel/delete-merged-branch)
+- [welcome](https://probot.github.io/apps/welcome/)
+
 ## Contributing
 
 [Contributing Guide](/CONTRIBUTING.md)
