@@ -9,7 +9,7 @@ import 'data-confirm-modal'
 // Local files
 import '../src/javascript/consumer'
 import '../src/javascript/index'
-
+import '../src/stylesheets/tailwind.scss'
 require('@rails/activestorage').start()
 require('local-time').start()
 
