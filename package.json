@@ -13,6 +13,8 @@
     "jquery": "^3.3.1",
     "local-time": "^2.1.0",
     "popper.js": "^1.14.7",
+    "stimulus": "^1.1.1",
+    "tailwindcss-stimulus-components": "^0.9.5",
     "turbolinks": "^5.1.1"
   },
   "devDependencies": {

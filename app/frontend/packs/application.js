@@ -1,10 +1,11 @@
 import Rails from '@rails/ujs'
 import Turbolinks from 'turbolinks'
 
-// Reference the new application.scss in your app / javascript / packs / application.js
-import 'bootstrap'
 import './stylesheets.scss'
 import 'data-confirm-modal'
+
+// Stimulus
+import "controllers"
 
 // Local files
 import '../src/javascript/consumer'
@@ -17,8 +18,3 @@ window.Rails = Rails
 
 Rails.start()
 Turbolinks.start()
-
-$(document).on('turbolinks:load', () => {
-  $('[data-toggle="tooltip"]').tooltip()
-  $('[data-toggle="popover"]').popover()
-})
