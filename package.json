@@ -13,6 +13,8 @@
     "jquery": "^3.3.1",
     "local-time": "^2.1.0",
     "popper.js": "^1.14.7",
+    "stimulus": "^1.1.1",
+    "tailwindcss-stimulus-components": "^0.9.5",
     "turbolinks": "^5.1.1"
   },
   "devDependencies": {
@@ -20,6 +22,7 @@
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^4.1.0",
     "prettier": "^1.16.4",
+    "tailwindcss": "^1.0.0-beta.4",
     "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.2.1"
   }
