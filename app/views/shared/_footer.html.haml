@@ -1,11 +1,10 @@
-%footer.footer.text-muted.bg-light
-  .container
-    %span
-      = "©#{Date.today.year} Andrew Mason"
-    %ul.list-inline.mb-0.float-right
-      %li.list-inline-item.mr-3
-        = link_to "Github", "https://github.com/andrewmcodes/maintainer-seeker", target: "_blank"
-      %li.list-inline-item.mr-3
-        = link_to "Terms", terms_path
-      %li.list-inline-item.mr-3
-        = link_to "Privacy", privacy_path
+%footer.flex.items-center.justify-between.flex-wrap.bg-gray-800.p-6
+  %span.text-white
+    = "©#{Date.today.year} Andrew Mason"
+  %ul.list-reset.flex
+    %li.ml-6
+      = link_to "Github", "https://github.com/andrewmcodes/maintainer-seeker", target: "_blank", class: "text-gray-500 hover:text-white"
+    %li.ml-6
+      = link_to "Terms", terms_path, class: "text-gray-500 hover:text-white"
+    %li.ml-6
+      = link_to "Privacy", privacy_path, class: "text-gray-500 hover:text-white"

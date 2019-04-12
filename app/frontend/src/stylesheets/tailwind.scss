@@ -3,3 +3,41 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.nav-item {
+  @apply block mt-4 text-gray-500 mr-4;
+}
+
+.nav-item:hover {
+  @apply text-white;
+}
+
+@screen lg {
+  .nav-item {
+    @apply inline-block mt-0;
+  }
+}
+
+.card {
+  @apply max-w-sm rounded overflow-hidden shadow-lg;
+}
+
+.card-img {
+  @apply w-full;
+}
+
+.card-header {
+  @apply font-bold text-xl mb-2;
+}
+
+.card-body {
+  @apply px-6 py-4;
+}
+
+.card-content {
+  @apply text-gray-700 text-base;
+}
+
+.card-footer {
+  @apply px-6 py-4;
+}
